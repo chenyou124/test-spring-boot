@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <!-- namespace必须指向Dao接口 -->
-<mapper namespace="name.taolei.zealot.test.springboot.TestDao">
+<mapper namespace="name.taolei.zealot.test.springboot.web.withoutParent.son.dao.TestDao">
     <!-- 根据ID查询数据 -->
     <select id="getById" parameterType="int" resultType="Test">
         SELECT id,a

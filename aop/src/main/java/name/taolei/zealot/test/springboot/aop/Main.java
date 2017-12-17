@@ -5,7 +5,10 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
 
-@Configuration @ComponentScan("name.taolei.zealot.test.springboot.aop") @EnableAspectJAutoProxy public class Main {
+@Configuration
+@ComponentScan("name.taolei.zealot.test.springboot.aop")
+@EnableAspectJAutoProxy
+public class Main {
 
     public static void main(String[] ags) {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext();
