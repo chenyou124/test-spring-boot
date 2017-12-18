@@ -18,9 +18,9 @@ import java.util.Map;
 
 @Configuration
 @PropertySource("classpath:jdbc.properties")
-
 public class DataSourceConfig {
-    @Autowired private Environment environment;
+    @Autowired
+    private Environment environment;
 
     //    @Bean
     //    public DataSource dataSource(){

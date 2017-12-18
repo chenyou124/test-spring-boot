@@ -11,7 +11,7 @@ import org.springframework.web.servlet.view.JstlView;
 
 @Configuration
 @EnableWebMvc
-@ComponentScan("name.taolei.zealot.test.springboot.mvcInnerTomcat.controller")
+@ComponentScan("name.taolei.zealot.test.springboot.web.mvcInnerTomcat.controller")
 public class ViewResolverConfig extends WebMvcConfigurerAdapter{
     @Bean
     public InternalResourceViewResolver viewResolver(){
