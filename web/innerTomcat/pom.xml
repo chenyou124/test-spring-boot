@@ -12,13 +12,13 @@
     <groupId>name.taolei.zealot.test.spring-boot</groupId>
     <artifactId>web-innerTomcat</artifactId>
     <version>1.0.0</version>
-    <packaging>war</packaging>
+    <packaging>jar</packaging>
     <name>web-innerTomcat</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>1.7</java.version>
-        <start-class>name.taolei.zealot.test.springboot.Run</start-class>
+        <start-class>name.taolei.zealot.test.springboot.web.mvcInnerTomcat.Run</start-class>
     </properties>
 
     <dependencies>

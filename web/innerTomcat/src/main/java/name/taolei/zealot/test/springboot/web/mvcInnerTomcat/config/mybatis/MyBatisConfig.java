@@ -37,7 +37,7 @@ public class MyBatisConfig implements TransactionManagementConfigurer {
             bean.setMapperLocations(resolver.getResources(environment.getProperty("mapperLocations")));
             return bean.getObject();
         } catch (Exception e) {
-            logger.error("resolver.getResources(\"classpath:/mybatis/*Mapper.xml\")", e);
+            logger.error("resolver.getResources(\"classpath:/sql/*Mapper.xml\")", e);
             throw new RuntimeException(e);
         }
     }
