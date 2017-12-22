@@ -1,4 +1,4 @@
-package name.taolei.zealot.test.springboot.withoutParent.son;
+package name.taolei.zealot.test.springboot.logback;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
