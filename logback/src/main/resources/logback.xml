@@ -2,7 +2,7 @@
 <configuration   scan="true" scanPeriod="60 seconds" debug="false">
     <contextName>SpringBootLogback</contextName>
     <!--test/test-spring-boot/logback-->
-    <property name="LOG_PATH" value="../logs/test/test-spring-boot"/>
+    <property name="LOG_PATH" value="../logs/test-spring-boot"/>
     <property name="APPDIR" value="logback"/>
     <property name="alert" value="%yellow(at %class.%method \(%file:%line\)) "/>
 
