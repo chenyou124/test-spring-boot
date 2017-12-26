@@ -10,12 +10,15 @@ import org.springframework.stereotype.Component;
 
 import java.lang.reflect.Method;
 
-@Aspect @Component public class AopAspect {
-    @Pointcut("@annotation(name.taolei.zealot.test.springboot.aop.Action)") public void annotationPointCut() {
-
+@Aspect
+@Component
+public class AopAspect {
+    @Pointcut("@annotation(name.taolei.zealot.test.springboot.aop.Action)")
+    public void annotationPointCut() {
     }
 
-    @After("annotationPointCut()") public void after(JoinPoint joinPoint) {
+    @After("annotationPointCut()")
+    public void after(JoinPoint joinPoint) {
         MethodSignature methodSignature = (MethodSignature) joinPoint.getSignature();
         Method method = methodSignature.getMethod();
         Action action = method.getAnnotation(Action.class);
@@ -23,8 +26,8 @@ import java.lang.reflect.Method;
         System.out.println("after注解拦截2：" + method.getName());
     }
 
-    @Before("execution(* name.taolei.zealot.test.springboot.aop.AopService.add(..))") public void before(
-            JoinPoint joinPoint) {
+    @Before("execution(* name.taolei.zealot.test.springboot.aop.AopService.add(..))")
+    public void before(JoinPoint joinPoint) {
         MethodSignature methodSignature = (MethodSignature) joinPoint.getSignature();
         Method method = methodSignature.getMethod();
         System.out.println("before方法拦截" + method.getName());

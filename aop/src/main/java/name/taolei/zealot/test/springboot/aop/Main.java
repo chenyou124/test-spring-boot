@@ -6,8 +6,8 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
 
 @Configuration
-@ComponentScan("name.taolei.zealot.test.springboot.aop")
 @EnableAspectJAutoProxy
+@ComponentScan("name.taolei.zealot.test.springboot.aop")
 public class Main {
 
     public static void main(String[] ags) {
