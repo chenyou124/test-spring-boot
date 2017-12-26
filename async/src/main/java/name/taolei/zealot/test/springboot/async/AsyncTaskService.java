@@ -7,11 +7,11 @@ import org.springframework.stereotype.Service;
 public class AsyncTaskService {
 
     @Async
-    public void sysAsync(Object o){
+    public void sysAsync(Object o) {
         System.out.println(o);
     }
 
-    public void sys(Object o){
+    public void sys(Object o) {
         System.out.println(o);
     }
 }

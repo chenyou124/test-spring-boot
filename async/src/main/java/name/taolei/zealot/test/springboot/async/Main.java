@@ -4,8 +4,6 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
-import java.security.PublicKey;
-
 @Configuration
 @ComponentScan("name.taolei.zealot.test.springboot.async")
 public class Main {
