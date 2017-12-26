@@ -15,11 +15,8 @@ public class TestService {
     @Autowired private SlaveTestDao slaveTestDao;
 
     public String doSomething() {
-        Test test = new Test();
-        test.setId(1L);
-        test.setA("1");
+        Test test = masterTestDao.getById(1);
         slaveTestDao.update(test);
-        System.out.println(test.getA());
         return "OK";
     }
 }

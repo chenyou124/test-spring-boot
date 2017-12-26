@@ -21,6 +21,7 @@ public class SlaveTestDao extends SqlSessionDaoSupport implements SlaveTestMappe
     public Test getById(int id) {
         return getSqlSession().selectOne(nameSpace + ".getById", id);
     }
+
     public void update(Test test) {
         getSqlSession().update(nameSpace + ".update", test);
     }
