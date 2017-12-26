@@ -8,5 +8,10 @@
     <version>1.0</version>
     <name>dubbo-zookeeper</name>
 
+    <modules>
+        <module>core</module>
+        <module>support</module>
+        <module>use</module>
+    </modules>
 
 </project>
