@@ -19,5 +19,10 @@ public class TestScheduledService {
     public void two() {
         SimpleDateFormat sdf = new SimpleDateFormat("HH:MM:ss");
         System.out.println("cron = \"0/5 * * * * *\"  " + sdf.format(Calendar.getInstance().getTime()));
+        try {
+            Thread.sleep(1 * 1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 }
