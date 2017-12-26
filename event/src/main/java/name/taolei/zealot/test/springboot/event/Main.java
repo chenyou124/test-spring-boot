@@ -13,7 +13,10 @@ public class Main {
         context.register(Main.class);
         context.refresh();
         TestEventPublish doServiceEventPublish = context.getBean(TestEventPublish.class);
-        doServiceEventPublish.publishEvent("测试事件");
+        doServiceEventPublish.publishAEvent("测试事件A");
+        doServiceEventPublish.publishBEvent("测试事件B");
+        doServiceEventPublish.publishAEvent("测试事件A");
+        doServiceEventPublish.publishBEvent("测试事件B");
         context.close();
         System.exit(0);
     }

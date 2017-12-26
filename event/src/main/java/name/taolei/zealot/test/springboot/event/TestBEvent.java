@@ -6,10 +6,10 @@ import org.springframework.context.ApplicationEvent;
 
 @Setter
 @Getter
-public class TestEvent extends ApplicationEvent {
+public class TestBEvent extends ApplicationEvent {
     private String msg;
 
-    public TestEvent(Object source, String msg) {
+    public TestBEvent(Object source, String msg) {
         super(source);
         this.msg = msg;
     }

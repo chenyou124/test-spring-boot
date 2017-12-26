@@ -8,7 +8,10 @@ import org.springframework.stereotype.Component;
 public class TestEventPublish {
     @Autowired ApplicationContext applicationContext;
 
-    public void publishEvent(String msg) {
-        applicationContext.publishEvent(new TestEvent(this, msg));
+    public void publishAEvent(String msg) {
+        applicationContext.publishEvent(new TestAEvent(this, msg));
+    }
+    public void publishBEvent(String msg) {
+        applicationContext.publishEvent(new TestBEvent(this, msg));
     }
 }
