@@ -32,6 +32,11 @@
     </dependencyManagement>
 
 	<dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+            <optional>true</optional>
+        </dependency>
         <!--setter/getter-->
         <dependency>
             <groupId>org.projectlombok</groupId>
@@ -89,6 +94,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
+                    <!--fork:设置True，否则可能devtools不会起作用-->
                     <fork>true</fork>
                     <mainClass>name.taolei.zealot.test.springboot.dubbo.zookeeper.support.Run</mainClass>
                 </configuration>
