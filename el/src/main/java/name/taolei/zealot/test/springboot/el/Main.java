@@ -1,12 +1,11 @@
 package name.taolei.zealot.test.springboot.el;
 
-import name.taolei.zealot.test.springboot.async.AsyncTaskService;
 import org.springframework.context.annotation.*;
 import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 
 @Configuration
-@ComponentScan("name.taolei.zealot.test.springboot.el")
 @PropertySource("classpath:el.properties")
+@ComponentScan("name.taolei.zealot.test.springboot.el")
 public class Main {
     @Bean
     public static PropertySourcesPlaceholderConfigurer propertyConfigInDev() {
